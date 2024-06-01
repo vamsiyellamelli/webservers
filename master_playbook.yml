@@ -1,0 +1,12 @@
+# playbook to call the files | mster play book
+- name: maste files
+  become: yes
+  become_user: ubuntu
+- hosts: webservers
+  roles:
+  - nginix
+
+- hosts: db
+  roles:
+  - dbservers
+

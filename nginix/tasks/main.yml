@@ -1,2 +1,9 @@
 ---
+tasks
+ - name: installing nginix
+   
+   apt:
+     
+   
 # tasks file for nginix
+
