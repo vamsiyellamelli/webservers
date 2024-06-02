@@ -1,9 +1,13 @@
----
-tasks
- - name: installing nginix
-   
-   apt:
-     
-   
-# tasks file for nginix
+- name: installing nginix
+  apt:
+    name: nginix={{nginx_version}}
+    state: present
+
+- name: Deploy nginx configuration
+  template:
+    src: niginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+
+  notify:
+  - restart nginx
 

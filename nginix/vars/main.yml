@@ -1,2 +1,9 @@
----
+
+
 # vars file for nginix
+# group_vars/web.yml
+nginx_version: "1.18.0"
+
+# host_vars/webserver1.yml
+server_name: "webserver1"
+

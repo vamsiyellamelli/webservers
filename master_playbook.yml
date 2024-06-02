@@ -2,11 +2,11 @@
 - name: maste files
   become: yes
   become_user: ubuntu
-- hosts: webservers
+  hosts: webservers
   roles:
   - nginix
 
-- hosts: db
-  roles:
-  - dbservers
+#- hosts: db
+#  roles:
+#  - dbservers
 

@@ -1,7 +1,8 @@
 # hosts 
-all
-
  [webservers]
+  ansible_host=54.82.18.146 ansible_user=ubuntu ansible_ssh_private_key_file=/mnt/c/Users/vamsi/Downloads/vamsi_practice.ppk
+
+  
 
 
  [dbservers]
