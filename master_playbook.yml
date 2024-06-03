@@ -3,6 +3,7 @@
   become: yes
   become_user: ubuntu
   hosts: webservers
+  ignore_errors: true
   roles:
   - nginix
 
