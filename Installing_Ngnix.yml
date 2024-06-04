@@ -1,7 +1,8 @@
 - name: installing nginx
   hosts: all
   become: ubuntu
-
+  vars:
+    ansible_python_interpreter: /home/ubuntu/myenv/bin/python
 - name: update cache
   apt:
     update_cache: yes
