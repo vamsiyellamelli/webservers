@@ -1,0 +1,19 @@
+- name: installing nginx
+  hosts: all
+  become: ubuntu
+
+- name: update cache
+  apt:
+    update_cache: yes
+
+- name: install nginix
+  apt:
+  name: nginx
+  state: present
+
+- name: start nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
